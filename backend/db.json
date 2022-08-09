@@ -1,8 +1,1 @@
-[
-    {
-        "name": "Cat 4",
-        "color": "Black",
-        "timeZone": "Asia/Aden",
-        "id": "9403e85b-581e-42c3-8143-1bedb48cb2dd"
-    }
-]
+[{"name":"Cat 4","color":"Black","timeZone":"Asia/Aden","id":"9403e85b-581e-42c3-8143-1bedb48cb2dd"},{"name":"Cat 1","color":"Black","timeZone":"Africa/Bujumbura","id":"db9d3152-b7a3-4495-b166-5c650d03ac88"},{"name":"Billa","color":"Peach","timeZone":"Asia/Kolkata","id":"ecc66b5f-df1f-4933-800c-683799617ddc"}]

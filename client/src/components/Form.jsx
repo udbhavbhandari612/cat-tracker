@@ -9,6 +9,7 @@ export default function Form({ mode, cat, cancel, zones }) {
     timeZone: cat?.timeZone || "",
   });
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
 
   const handleInput = ({ target: { name, value } }) => {
     setFormData((prev) => {
@@ -29,7 +30,14 @@ export default function Form({ mode, cat, cancel, zones }) {
           ? await updateCat({ id: cat?.id, timeZone: formData.timeZone })
           : await addCat({ cat: { ...formData } });
       if (result) {
-        cancel(true);
+        setSuccess(
+          `${formData.name} was ${
+            mode === "edit" ? "updated" : "added"
+          } successfully!`
+        );
+        setTimeout(() => {
+          cancel(true);
+        }, 2500);
       }
     } catch (error) {
       setError(error.message);
@@ -91,6 +99,7 @@ export default function Form({ mode, cat, cancel, zones }) {
         </div>
       </div>
       {error && <div className="text-danger ms-auto my-2">{error}</div>}
+      {success && <div className="text-success ms-auto my-2">{success}</div>}
       <div className="d-flex justify-content-end mt-4">
         <button
           onClick={cancel}
