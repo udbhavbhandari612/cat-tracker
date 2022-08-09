@@ -17,6 +17,7 @@ export function updateCat(catId, timeZone) {
     cat.timeZone = timeZone;
   }
   writeCats(cats);
+  return cat;
 }
 
 export function deleteCat(catId) {

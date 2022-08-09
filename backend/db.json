@@ -1,1 +1,8 @@
-[{"id":"50d85d70-b16c-47c8-b14c-81cbbc8b34d3","name":"Spot","color":"white","timeZone":"America/Los_Angeles"}]
+[
+    {
+        "name": "Cat 4",
+        "color": "Black",
+        "timeZone": "Asia/Aden",
+        "id": "9403e85b-581e-42c3-8143-1bedb48cb2dd"
+    }
+]

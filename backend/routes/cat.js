@@ -12,13 +12,14 @@ cat.post("/", (req, res) => {
   const { cat } = req.body || {};
   const id = uuid();
   if (cat) addCat({ ...cat, id });
-  res.status(200).send(getCats());
+  res.status(200).send({ cat: { ...cat, id } });
 });
 
 cat.put("/", (req, res) => {
   const { id, timeZone } = req.body || {};
-  if (id && timeZone) updateCat(id, timeZone);
-  res.status(200).send(getCats());
+  let cat = {};
+  if (id && timeZone) cat = updateCat(id, timeZone);
+  res.status(200).send({ cat });
 });
 
 cat.delete("/", (req, res) => {
