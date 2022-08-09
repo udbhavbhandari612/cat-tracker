@@ -1,8 +1,6 @@
 # Cat Tracker
 
 ##### This is an application for basic CRUD using React.js + Node.js(Express)
-#
-#
 # 
 This CRM has the following functionality:
 
