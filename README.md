@@ -1,7 +1,12 @@
 # Cat Tracker
 
 ##### This is an application for basic CRUD using React.js + Node.js(Express)
-# 
+#
+###### To Run the application:
+- Go to `backend` folder via cmd and run `npm start`
+- When the server is started, go to `client` folder and run `npm start`
+- Web app will be accessible on `localhost:3000`
+#
 This CRM has the following functionality:
 
 - It uses a data structure like this:
